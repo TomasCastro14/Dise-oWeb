@@ -20,35 +20,14 @@
                 <img class="contenedor" src="Fotos/PageNotFoundIcon.png" alt="Page Not Found icon">
                 <h1 id="titulo"> No, esta página (todavía) no existe. </h1>
                 <p> Hemos buscado por todos lados, pero no pudimos encontrar la página que estabas buscando. Podés <strong>volver a la zona segura</strong> (recomendado) o <strong>probar tu suerte</strong> intentando encontrar tus resultados con un método más drástico.</p>
-                <div class="contenedor-botones">
+                <div class="contenedor-botones" >
                     <div class="contenedor-boton"> <a href="../index.html" id="back-link"> Volver al inicio </div>
-                    <div class="contenedor-botondebil"> <a id="random-link" href="#">Voy a tener suerte</a> </div>
+                    <div class="contenedor-botondebil" id="redirect-button"> <a id="random-link" href="#">Voy a tener suerte</a> </div>
                 </div>
             </div>
         </div>
 
-        <script>
-            // Array con los enlaces a los que el botón puede redirigir
-            const links = [
-                'https://www.google.com',
-                'https://www.apple.com/',
-                'https://www.github.com',
-                'https://www.youtube.com',
-                'https://www.uade.edu.ar'
-            ];
-        
-            // Selecciona el botón "Voy a tener suerte"
-            const luckButton = document.getElementById('random-link');
-        
-            // Función para obtener un enlace aleatorio
-            function getRandomLink() {
-                const randomIndex = Math.floor(Math.random() * links.length);
-                return links[randomIndex];
-            }
-        
-            // Asigna el enlace aleatorio al href del botón
-            luckButton.href = getRandomLink();
-        </script>
+        <script src="./randomLinkScript.js"></script>
 
     </main>
 
