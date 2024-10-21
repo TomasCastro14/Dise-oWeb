@@ -64,7 +64,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-image: url("Images/HomePage/Wallpaper.png");
+            background-image: url("HomeScreenElements/Images/HomePage/Wallpaper.png");
             background-attachment: fixed;
             background-size: cover;
         }
@@ -156,7 +156,7 @@
         .link-button:hover {
             height: 75px;
             width: 70%;
-            background-color: #e68099; 
+            background-color: #E3AFBC; 
             border-radius: 20px;
             cursor: pointer;
         }
