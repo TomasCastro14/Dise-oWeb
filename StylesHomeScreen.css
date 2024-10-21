@@ -1,28 +1,28 @@
 /* F U E N T E S */
 @font-face {
     font-family: BirdsOfParadise;
-    src: url(Fonts/BirdsOfParadise.ttf);
+    src: url(HomeScreenElements/Fonts/BirdsOfParadise.ttf);
 }
 
 @font-face {
     font-family: LexendDeca_Bold;
-    src: url(Fonts/LexendDeca/LexendDeca-Bold.ttf);
+    src: url(HomeScreenElements/Fonts/LexendDeca/LexendDeca-Bold.ttf);
 }
 
 @font-face {
     font-family: LexendDeca_Medium;
-    src: url(Fonts/LexendDeca/LexendDeca-Medium.ttf);
+    src: url(HomeScreenElements/Fonts/LexendDeca/LexendDeca-Medium.ttf);
 }
 
 @font-face {
     font-family: LexendDeca_Regular;
-    src: url(Fonts/LexendDeca/LexendDeca-Regular.ttf);
+    src: url(HomeScreenElements/Fonts/LexendDeca/LexendDeca-Regular.ttf);
 }
 
 
 @font-face {
     font-family: LexendDeca_Light;
-    src: url(Fonts/LexendDeca/LexendDeca-Light.ttf);
+    src: url(HomeScreenElements/Fonts/LexendDeca/LexendDeca-Light.ttf);
 }
 
 /* E S T I L O S - D E L - T E X T O */
