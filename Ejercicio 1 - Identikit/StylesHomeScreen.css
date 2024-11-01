@@ -1,0 +1,167 @@
+/* F U E N T E S */
+@font-face {
+    font-family: BirdsOfParadise;
+    src: url(HomeScreenElements/Fonts/BirdsOfParadise.ttf);
+}
+
+@font-face {
+    font-family: LexendDeca_Bold;
+    src: url(HomeScreenElements/Fonts/LexendDeca/LexendDeca-Bold.ttf);
+}
+
+@font-face {
+    font-family: LexendDeca_Medium;
+    src: url(HomeScreenElements/Fonts/LexendDeca/LexendDeca-Medium.ttf);
+}
+
+@font-face {
+    font-family: LexendDeca_Regular;
+    src: url(HomeScreenElements/Fonts/LexendDeca/LexendDeca-Regular.ttf);
+}
+
+
+@font-face {
+    font-family: LexendDeca_Light;
+    src: url(HomeScreenElements/Fonts/LexendDeca/LexendDeca-Light.ttf);
+}
+
+/* E S T I L O S - D E L - T E X T O */
+    h1{
+        color: #5D001E;
+        font-family: LexendDeca_Bold;
+        text-align: center;
+    }
+
+    h2{
+        color: #9A1750;
+        font-family: LexendDeca_Medium;
+        text-align: auto;
+    }
+
+    h3{
+        color: #5D001E;
+        font-family: LexendDeca_Regular;
+        text-align: auto;
+        margin: 5px;
+    }
+
+    p {
+        color: #555;
+        font-family: LexendDeca_Light;
+    }		
+
+/* C O N S T R U C T O R E S */
+    /* Elimina márgenes y ajustes generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+    /* El body ocupará toda la pantalla */
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("HomeScreenElements/Images/HomePage/Wallpaper.png");
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+    /* Contenedor que ocupa el 100% del ancho */
+        .container {
+            background: rgb(242, 241, 237, 0.5);
+            width: 100%;
+            height: 100%;
+            max-width: 900px;
+        }
+
+
+/* E L E M E N T O S */
+
+    /* Separador de Contenedores*/
+        .separador {
+            width: 100%;
+            height: 50px;
+            display: flex;
+        }
+
+    /* Contenedor donde se colocará la foto de perfil y la información relevante */
+        .info-container {
+            height: auto;
+            width: 100%;
+            display: flex;
+            flex-direction: column; /* Cambia la dirección de los elementos a una columna */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .info-pfp {
+            width: 170px;
+            height: auto;
+            max-width: 100%;
+            align-self: center ;
+            border-radius: 100%;
+            margin-bottom: 10px;
+        }
+
+    /* Contenedor donde se colocarán los links */
+        .link-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70px;
+            width: 65%;
+            background-color: #F2F1ED;
+            border-radius: 50px;
+            margin: 10px auto; /* Centra el botón horizontalmente */
+            padding: 0 10px; 
+            box-sizing: border-box; 
+            transition: 0.5s ease; /* Efecto suave en hover */
+            text-decoration: none; /* Eliminar subrayado */
+        }
+
+    /* Íconos Borde dentro de los botones */
+        .link-button-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px; 
+            height: 50px; 
+            margin-left: 5px; 
+            background-color: #EE4C7C;
+            border-radius: 100%;
+            transition: 0.5s ease; /* Efecto suave en hover */
+        }
+    /* Íconos dentro de los botones */
+        .link-button-icon-image {
+            width: 40px; 
+            height: 40px;
+            position: centre;
+        }
+
+    /* Texto dentro de los botones */
+        .link-button-text {
+            font-size: 18px;
+            flex-grow: 1; 
+            display: flex;
+            justify-content: center; 
+            text-decoration: none;
+            align-items: center; 
+            margin: 0; 
+        }
+
+    /* Efecto para pintar cada botón */
+        .link-button:hover {
+            height: 75px;
+            width: 70%;
+            background-color: #E3AFBC; 
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+    /* Cambios en el ícono cuando se hace hover en el botón */
+        .link-button:hover .link-button-icon {
+            border-radius: 12px; /* Cambia el border-radius del ícono */
+        }

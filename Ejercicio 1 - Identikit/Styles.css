@@ -1,0 +1,290 @@
+/* F U E N T E S */
+@font-face {
+    font-family: BirdsOfParadise;
+    src: url(Elements/Fonts/BirdsOfParadise.ttf);
+}
+
+@font-face {
+    font-family: LexendDeca_Bold;
+    src: url(Elements/Fonts/LexendDeca/LexendDeca-Bold.ttf);
+}
+
+@font-face {
+    font-family: LexendDeca_Medium;
+    src: url(Elements/Fonts/LexendDeca/LexendDeca-Medium.ttf);
+}
+
+@font-face {
+    font-family: LexendDeca_Light;
+    src: url(Elements/Fonts/LexendDeca/LexendDeca-Light.ttf);
+}
+
+/* E S T I L O S - D E L - T E X T O */
+#titulo{
+    color: #5D001E;
+    font-family: LexendDeca_Bold;
+    text-align: center;
+}
+
+h1{
+    color: #5D001E;
+    font-family: LexendDeca_Bold;
+    text-align: center;
+}
+
+h2{
+    color: #9A1750;
+    font-family: LexendDeca_Medium;
+    text-align: auto;
+}
+
+p {
+    color: #555;
+    font-family: LexendDeca_Light;
+}		
+
+/* C O N S T R U C T O R E S */
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%; 
+    max-height: 100%; 
+    width: 100%;
+    font-family:Sans-serif;
+    line-height: 1.5em;
+}
+
+/* Barra de navegación */
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribuye los elementos entre el espacio disponible */
+    padding: 0 20px;
+    height: 100%;
+    background-color: #F2F1ED;
+}
+
+/* Contenedor de los enlaces */
+.nav-links-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 105px; /* Desplaza todo el grupo de botones 130px desde el borde izquierdo */
+}
+
+/* Estilos para los enlaces */
+.nav-link {
+    display: inline-block;
+    padding: 6px 20px;
+    margin: 0 10px; /* Mantén el mismo margen entre los botones */
+    color: #9A1750;
+    background-color: transparent;
+    text-decoration: none;
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Botón activo (página actual) */
+.nav-link.active {
+    background-color: #9A1750;  
+    color: #ffffff;            
+    font-weight: bold;      
+}
+
+/* Efecto hover */
+.nav-link:hover {
+    background-color: #e68099;  
+    cursor: pointer;
+}
+
+/* Estilo para el botón "Atrás" */
+.nav-link-back {
+    display: flex;
+    align-items: center;
+    padding: 6px 16px;
+    margin-right: 130px;
+    background-color: white;
+    color: #9A1750;
+    text-decoration: none;
+    border-radius: 40px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Icono de la flecha */
+.nav-link-back-icon {
+    width: 20px; 
+    height: 20px; 
+    margin-right: 9px;
+}
+
+.nav-link-back:hover {
+    background-color: #e68099;    
+    cursor: pointer;              
+}
+
+main {
+    position: fixed;
+    top: 50px; /* Set this to the height of the header */
+    bottom: 50px; /* Set this to the height of the footer */
+    left: 230px; 
+    right: 230px;
+    overflow: auto; 
+    background: #F2F1ED;
+}
+        
+#header {
+    position: fixed; /* Cambié a fixed para mantener el header siempre visible */
+    left: 230px;     /* Margen izquierdo para respetar el espacio */
+    right: 230px;    /* Margen derecho para evitar que se vaya al borde */
+    top: 0;
+    height: 50px;
+    overflow: hidden; /* Para ocultar el desbordamiento del contenido */
+    background: #e68099;
+    max-width: calc(100% - 460px); /* Calcula el ancho máximo tomando en cuenta ambos márgenes */
+}
+
+#footer {
+    position: fixed; /* Cambié a fixed para mantener el footer siempre visible */
+    left: 230px;     /* Margen izquierdo */
+    right: 230px;    /* Margen derecho */
+    bottom: 0;
+    height: 50px;
+    overflow: hidden; /* Para ocultar el desbordamiento del contenido */
+    background: #e68099;
+    max-width: calc(100% - 460px); /* Calcula el ancho máximo tomando en cuenta ambos márgenes */
+}
+        
+
+.innertube {
+    margin: 15px; /* Provides padding for the content */
+}
+
+
+* html main{ 
+    height: 100%; 
+    width: 100%; 
+}
+
+
+#navegacionTitulo{
+    color: #5D001E;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos del contenedor */
+.contenedor-recuadro {
+    display: flex; /* Flexbox para alinear elementos uno al lado del otro */
+    padding: 20px; /* Espacio interno del recuadro */
+    width: 80%; /* Ancho del recuadro */
+    margin: 20px auto; /* Centrar el recuadro horizontalmente */
+    background-color: #f9f9f9; /* Color de fondo del recuadro */
+    border-radius: 12px; /* Puntas redondeadas */
+}
+
+/* Estilos para la parte del texto */
+.texto {
+    flex: 1; /* Hace que el texto ocupe la mitad del espacio */
+    padding-right: 20px; /* Espacio entre el texto y la imagen */
+    font-family: Arial, sans-serif;
+    color: #333; /* Color del texto */
+}
+
+/* Estilos para la imagen */
+.imagen {
+    flex: 1; /* Hace que la imagen ocupe la mitad del espacio */
+    display: flex; /* Flexbox para centrar la imagen */
+    justify-content: right;
+    align-items: center;
+}
+
+.imagen img {
+    border-radius: 12px; /* Bordes redondeados para la imagen */
+}
+
+.boton-leer-mas {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #9A1750; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Eliminar subrayado */
+    border-radius: 12px; /* Bordes redondeados */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Efecto suave en hover */
+}
+
+.boton-leer-mas:hover {
+    background-color: #d1607f; /* Cambiar color del botón al hacer hover */
+    cursor: pointer; /* Cambiar cursor */
+}
+
+/* Estilos para los contenedores individuales */
+/* Estilos del contenedor principal */
+.contenedor-principal {
+    display: flex; /* Flexbox para alinear los contenedores en línea */
+    justify-content: space-between; /* Espacio entre los contenedores */
+    flex-wrap: wrap; /* Permitir que los contenedores se envuelvan si el espacio es insuficiente */
+    margin: 20px auto; /* Centrar el contenedor principal horizontalmente */
+    width: calc(100% - 224px); /* Ancho del contenedor principal menos los márgenes laterales */
+}
+
+/* Estilos para los contenedores individuales */
+.contenedor {
+    flex: 1; /* Hacer que los contenedores ocupen el mismo espacio */
+    max-width: calc(33.333% - 20px); /* Ancho máximo para cada contenedor menos el espacio entre ellos */
+    background-color: #f9f9f9; /* Color de fondo del contenedor */
+    border-radius: 12px; /* Bordes redondeados */
+    margin: 10px; /* Espacio entre los contenedores */
+    padding: 15px; /* Espacio interno */
+    text-align: center; /* Centrar texto e imagen */
+}
+
+.contenedor h2 {
+    margin-bottom: 10px; /* Espacio debajo del título */
+    text-align: center;
+}
+
+.contenedor p {
+    margin-bottom: 15px; /* Espacio debajo de la descripción */
+}
+
+.contenedor img {
+    max-width: 100%; /* Asegura que la imagen no se desborde */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 12px; /* Bordes redondeados para la imagen */
+}
+
+/* Nuevo tipo de recuadro: imagen sobre texto */
+.contenedor-imagen-sobre-texto {
+    display: flex;
+    flex-direction: column; /* Colocar imagen arriba del texto */
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.contenedor-imagen-sobre-texto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.separador-invisible-titulo {
+    height: 150px; /* Puedes ajustar esta altura según tus necesidades */
+    width: 100%;
+}
+
+.separador-invisible {
+    height: 30px; /* Puedes ajustar esta altura según tus necesidades */
+    width: 100%;
+}
+
