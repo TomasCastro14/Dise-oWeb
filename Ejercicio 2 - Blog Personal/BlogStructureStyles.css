@@ -110,7 +110,7 @@
     .nav-links-container {
         display: flex;
         justify-content: space-between;
-        margin-left: 90px; /* Desplaza todo el grupo de botones 130px desde el borde izquierdo */
+        margin-left: 96px; /* Desplaza todo el grupo de botones 130px desde el borde izquierdo */
     }
 
     /* Estilos para los enlaces */
@@ -145,7 +145,7 @@
         display: flex;
         align-items: center;
         padding: 6px 16px;
-        margin-right: 117px;
+        margin-right: 120px;
         background-color: white;
         color: #174EA6;
         font-family: LexendDeca_Light;
@@ -167,14 +167,3 @@
         cursor: pointer;              
     }
 
-    /*Nav Responsive*/
-    @media screen and (max-width: 500px) {
-        .nav-bar a {
-          float: none;
-          display: block;
-          text-align: left;
-        }
-        .nav-links-container {
-          float: none;
-        }
-      }
