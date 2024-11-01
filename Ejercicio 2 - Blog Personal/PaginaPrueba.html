@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Página de Tomás - Inicio</title>
+		<style type="text/css">
+
+            @font-face {
+                font-family: BirdsOfParadise;
+                src: url(Elements/Fonts/BirdsOfParadise.ttf);
+            }
+
+            @font-face {
+                font-family: LexendDeca_Bold;
+                src: url(Elements/Fonts/LexendDeca/LexendDeca-Bold.ttf);
+            }
+
+            @font-face {
+                font-family: LexendDeca_Medium;
+                src: url(Elements/Fonts/LexendDeca/LexendDeca-Medium.ttf);
+            }
+
+            @font-face {
+                font-family: LexendDeca_Light;
+                src: url(Elements/Fonts/LexendDeca/LexendDeca-Light.ttf);
+            }
+
+            * html main{ 
+                height: 100%; 
+                width: 100%; 
+            }
+            .innertube {
+                margin: 15px; /* Provides padding for the content */
+            }
+            main {
+                position: fixed;
+                top: 50px; /* Set this to the height of the header */
+                bottom: 0px; /* Set this to the height of the footer */
+                left: 230px; 
+                right: 230px;
+                overflow: auto; 
+                background: #F2F1ED;
+            }
+
+            h1{
+                color: #9A1750;
+                font-family: LexendDeca_Bold;
+                text-align: left;
+                font-size: 75px;
+                margin-bottom: 0px;
+            }
+
+            h2{
+                color: #9A1750;
+                font-family: LexendDeca_Medium;
+                text-align: left;
+            }
+
+            p {
+                color: #2b2b2b;
+                font-family: LexendDeca_Light;
+            }		
+
+            .contenedor-recuadro {
+                position: relative; /* Necesario para que el fondo del texto se posicione bien */
+                display: flex;
+                width: 99%;
+                height: 500px;
+                margin: 20px auto;
+                background-image: url("FotosPrincipal/FotosCanciones/RedVelvetCosmic.jpeg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 12px;
+            }
+
+            /* Estilo para colocar el texto abajo */
+            .contenedor-texto {
+                width: 97.24%; /* Ocupar todo el ancho del contenedor */
+                padding: 20px;
+                border-radius: 12px;
+                text-align: left;
+                background: linear-gradient(
+                    to top, 
+                    #F2F1ED 0%,   /* Color fuerte abajo */
+                    rgba(0, 0, 0, 0) 100%    /* Transparente arriba */
+                );
+                color: white; /* Color de texto blanco para mejor contraste */
+                position: absolute;
+                bottom: 0;
+            }
+
+            .contenedor-imagen-sobre-texto img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 12px;
+                margin-bottom: 15px;
+            }
+
+            .cuadro-texto {
+                display: flex; /* Flexbox para alinear elementos uno al lado del otro */
+                padding: 20px; /* Espacio interno del recuadro */
+                width: 80%; /* Ancho del recuadro */
+                margin: 20px auto; /* Centrar el recuadro horizontalmente */
+                background-color: #f9f9f9; /* Color de fondo del recuadro */
+                border-radius: 12px; /* Puntas redondeadas */
+            }
+
+            /* Estilos para la parte del texto */
+            .texto {
+                flex: 1; /* Hace que el texto ocupe la mitad del espacio */
+                padding-right: 20px; /* Espacio entre el texto y la imagen */
+                font-family: Arial, sans-serif;
+                color: #333; /* Color del texto */
+            }
+
+            /* Estilos para la imagen */
+            .imagen {
+                flex: 1; /* Hace que la imagen ocupe la mitad del espacio */
+                display: flex; /* Flexbox para centrar la imagen */
+                justify-content: right;
+                align-items: center;
+            }
+
+		</style>
+    </head>
+    <body>
+
+        <div id="header">
+			<nav class="nav-bar">
+				<a href="IDTKlayout.html" class="nav-link">Inicio</a>
+				<a href="#" class="nav-link active">Red Velvet</a>
+				<a href="TierList.html" class="nav-link">Subway Tierlist</a>
+				<a href="TypoTester.html" class="nav-link"> Typo Tester </a>
+				<a href="Clase1.html" class="nav-link">IDTK Legacy</a>
+			</nav>
+		</div>
+
+        <main>
+            <div class="innertube">
+                <div class="contenedor-recuadro">
+                    <div class="contenedor-texto">
+                        <div class="contenedor-imagen-sobre-texto img">
+                            <h1>This Is: RED VELVET</h1>
+                            <p>Red Velvet es un grupo surcoreano de K-pop formado por SM Entertainment en 2014. Compuesto por cinco integrantes: Irene, Seulgi, Wendy, Joy y Yeri, su música destaca por mezclar conceptos brillantes y alegres ("Red") con estilos más oscuros y sofisticados ("Velvet"). Son conocidas por su versatilidad musical, explorando géneros como el pop, R&B y EDM. Han logrado gran éxito con canciones icónicas como Red Flavor y Psycho, y se destacan tanto por su talento vocal como por sus impactantes presentaciones visuales.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cuadro-texto">
+					<!-- Parte del texto -->
+					<div class="texto">
+						<a href="TypoTester.html"><h2> TypoTester: Encontrá Tu Typo Favorita </h2></a>
+						<p>TypoTester es una herramienta interactiva diseñada para explorar y comparar diferentes tipografías dentro del entorno de Visual Studio Code. La página está dividida en varias secciones que permiten a los usuarios conocer y probar fuentes Serif, Sans-Serif, Monoespaciadas y Cursivas/Fantasy, visualizando de manera clara cómo se ven y se comportan en distintos contextos de diseño y programación.</p>
+						<a href="TypoTester.html" class="boton-leer-mas">Leer Más</a>
+					</div>
+					
+					<!-- Parte de la imagen -->
+					<div class="imagen">
+						<img style="width: 500px; height: auto;" src="FotosPrincipal/FotosMain/TypoTester.jpg" alt="Descripción de la imagen">
+					</div>
+				</div>
+
+            </div>
+        </main>
+    </body>
+    <footer>
+        Hola
+    </footer>
+</html>
