@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> TOM's Blog! - Home</title>
+<link rel="icon" href="Main Images/homeBlog.png" type="image/x-icon">
+<link rel="stylesheet" href="ContactMeStyles.css">
+<style></style>
+</head>
+<body>
+    <div class="header">
+    <h1>TOM's Blog</h1>
+    <p>Es más que un Trabajo Práctico, son horas de trabajo no remuneradas.</p>
+    </div>
+
+    <div class="topnav">
+    <a href="/Ejercicio 2 - Blog Personal/BlogHomepage.html">Inicio</a>
+        <a href="/Ejercicio 2 - Blog Personal/ArticlesSection/BlogArticles.html">Artículos</a>
+        <a href="/Ejercicio 2 - Blog Personal/LinesSection/BlogLines.html">Líneas</a>
+        <a href="#contact">Estado de Servicio</a>
+        <a class="active">Contacto</a>
+        <a href="../index.html" class="split"><img src="../HomePageElements/Icons/ExitAppIcon.png" alt="Flecha atrás">Salir</a>
+    </div>
+    <div class="row">
+        <h1 id="#title">Dejanos Tu Opinión</h1>
+        <div class="container">
+            <form action="/action_page.php">
+                <label for="fname">Nombre</label>
+                <input type="text" id="fname" name="firstname" placeholder="Tu Nombre">
+
+                <label for="lname">Mail de Contacto</label>
+                <input type="text" id="lname" name="lastname" placeholder="nombre@ejemplo.com">
+
+                <label for="country">Provincia de Origen</label>
+                <select id="country" name="country">
+                <option value="CABA">-- Seleccione una provincia de origen --</option>
+                <option value="CABA">Córdoba</option>
+                <option value="CABA">Ciudad Autónoma de Buenos Aires</option>
+                <option value="PBA">Buenos Aires (provincia)</option>
+                <option value="EntreRios">Entre Ríos</option>
+                <option value="EntreRios">Santa Cruz</option>
+                <option value="StaFe">Santa Fe</option>
+                <option value="StaFe">Mendoza</option>
+                <option value="CABA">Otro</option>
+                </select>
+
+                <label for="subject">Comentarios *</label>
+                <textarea id="subject" name="subject" placeholder="Dejanos saber tus comentarios" style="height:200px"></textarea>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" checked>
+                    <label class="form-check-label">Quiero recibir notificaciones</label>
+                </div>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

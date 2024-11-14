@@ -1,0 +1,184 @@
+/* F U E N T E S */
+@font-face {
+    font-family: BirdsOfParadise;
+    src: url(../HomePageElements/Fonts/BirdsOfParadise.ttf);
+  }
+
+  @font-face {
+    font-family: LexendDeca_Bold;
+    src: url(../HomePageElements/Fonts/LexendDeca/LexendDeca-Bold.ttf);
+  }
+
+  @font-face {
+    font-family: LexendDeca_Medium;
+    src: url(../HomePageElements/Fonts/LexendDeca/LexendDeca-Medium.ttf);
+  }
+
+  @font-face {
+    font-family: LexendDeca_Regular;
+    src: url(../HomePageElements/Fonts/LexendDeca/LexendDeca-Regular.ttf);
+  }
+
+
+  @font-face {
+    font-family: LexendDeca_Light;
+    src: url(../HomePageElements/Fonts/LexendDeca/LexendDeca-Light.ttf);
+  }
+
+/* E S T I L O S - D E L - T E X T O */
+  h1{
+      color: #174EA6;
+      font-family: LexendDeca_Bold;
+      margin-bottom: 20px;
+
+  }
+
+  #title {
+    margin-left: 300px;
+  }
+
+  h2{
+      color: #2173BB;
+      font-family: LexendDeca_Medium;
+      text-align: auto;
+  }
+
+  h3{
+      color: #174EA6;
+      font-family: LexendDeca_Regular;
+      text-align: auto;
+      margin: 5px;
+  }
+
+  h5{
+    color: #202124;
+    font-family: LexendDeca_Light;
+    text-align: auto;
+    }   
+
+  p {
+      color: #202124;
+      font-family: LexendDeca_Light;
+  }
+
+/* C O N S T R U C T O R E S */
+    * {
+    box-sizing: border-box;
+    }
+
+    /* Add a gray background color with some padding */
+    body {
+    font-family: LexendDeca_Regular;
+    padding: 20px;
+    background: #EDF1F2;
+    margin: 0px 200px 0px 200px;
+    }
+
+    .header {
+    background-color: #EDF1F2;
+    padding: 30px;
+    text-align: center;
+    }
+
+    .topnav {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #EDF1F2;
+    }
+
+    .topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 7px 20px;
+    margin: 10px 0px 10px 0px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    }
+
+    .topnav a.active {
+    background-color: #D2E3FC;
+    color: #174EA6;
+    font-weight: bold;
+    }
+
+    .topnav a:hover {
+    background-color: #D2E3FC;
+    }
+
+    /* Create a right-aligned (split) link inside the navigation bar */
+    .topnav a.split {
+        float: right;
+        align-items: center;
+        display: flex;
+        background-color: white;
+        align-items: center;
+        color: #174EA6;
+    }
+
+    .topnav a.split img {
+        width: 20px; 
+        height: auto; 
+        margin: 0px 5px 0px 0px;
+    }
+
+    .topnav a.split:hover {
+        background-color: #D2E3FC;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Forms */
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+      
+    input[type=submit] {
+        background-color: #4285F4;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        margin-top: 16px;
+        transition: background-color 0.3s ease;
+    }
+      
+    input[type=submit]:hover {
+        background-color: #174EA6;
+    }
+      
+    .container {
+        border-radius: 10px;
+        background-color: white;
+        padding: 20px;
+        margin: 0px 300px 0px 300px;
+    }
+
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 1500px) {
+      .container {
+          margin: 0px 10px 0px 10px;
+      }
+      body {
+          margin: 0px 50px 0px 50px;
+      }
+      #title {
+        margin-left: 10px;
+      }
+    }

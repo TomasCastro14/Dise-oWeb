@@ -1,0 +1,271 @@
+/* F U E N T E S */
+    @font-face {
+      font-family: BirdsOfParadise;
+      src: url(../HomePageElements/Fonts/BirdsOfParadise.ttf);
+    }
+
+    @font-face {
+      font-family: LexendDeca_Bold;
+      src: url(../HomePageElements/Fonts/LexendDeca/LexendDeca-Bold.ttf);
+    }
+
+    @font-face {
+      font-family: LexendDeca_Medium;
+      src: url(../HomePageElements/Fonts/LexendDeca/LexendDeca-Medium.ttf);
+    }
+
+    @font-face {
+      font-family: LexendDeca_Regular;
+      src: url(../HomePageElements/Fonts/LexendDeca/LexendDeca-Regular.ttf);
+    }
+
+
+    @font-face {
+      font-family: LexendDeca_Light;
+      src: url(../HomePageElements/Fonts/LexendDeca/LexendDeca-Light.ttf);
+    }
+
+/* E S T I L O S - D E L - T E X T O */
+    h1{
+        color: #174EA6;
+        font-family: LexendDeca_Bold;
+        margin-bottom: 20px;
+    }
+
+    h2{
+        color: #2173BB;
+        font-family: LexendDeca_Medium;
+        text-align: auto;
+    }
+
+    h3{
+        color: #174EA6;
+        font-family: LexendDeca_Regular;
+        text-align: auto;
+        margin: 5px;
+    }
+
+    h5{
+      color: #202124;
+      font-family: LexendDeca_Light;
+      text-align: auto;
+  }
+
+    p {
+        color: #202124;
+        font-family: LexendDeca_Light;
+    }
+
+/* C O N S T R U C T O R E S */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Add a gray background color with some padding */
+  body {
+    font-family: LexendDeca_Regular;
+    padding: 20px;
+    background: #EDF1F2;
+    margin: 0px 200px 0px 200px;
+  }
+  
+  .header {
+    background-color: #EDF1F2;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .topnav {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #EDF1F2;
+  }
+  
+  .topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 7px 20px;
+    margin: 10px 0px 10px 0px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .topnav a.active {
+    background-color: #D2E3FC;
+    color: #174EA6;
+    font-weight: bold;
+  }
+  
+  .topnav a:hover {
+    background-color: #D2E3FC;
+  }
+  
+  /* Create a right-aligned (split) link inside the navigation bar */
+  .topnav a.split {
+      float: right;
+      align-items: center;
+      display: flex;
+      background-color: white;
+      align-items: center;
+      color: #174EA6;
+  }
+  
+  .topnav a.split img {
+      width: 20px; 
+      height: auto; 
+      margin: 0px 5px 0px 0px;
+  }
+  
+  .topnav a.split:hover {
+    background-color: #D2E3FC;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+    padding: 0px 20pxpx 0px 0px;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    height: 100px;
+    background-size: cover;
+    position: center;
+  }
+  
+  .tiles-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+
+  /* Add a card effect for articles */
+  .card {
+    flex: 1 0 500px;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+
+  .card-img {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    height: 350px;
+    background-size: cover;
+    position: center;
+    border-radius: 10px;
+  }
+
+  div.gallery {
+    background-color: white;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  div.gallery:hover {
+    background-color: #D2E3FC;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+  }
+  
+  div.desc {
+    padding: 0 15px 10px 15px;
+    text-align: left;
+  }
+  
+  div.desc h3 {
+    margin: 5px 0 5px 0;
+  }
+  
+  div.desc h5 {
+    margin: 7px 0 7px 0;
+  }
+  
+  div.desc p {
+    margin: 5px 0 5px 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    float: center;
+    width: 31.77%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .trendy {
+    align-items: center;
+    display: flex;
+    background-color: #EDF1F2;
+    align-items: center;
+    color: #202124;
+    margin: 10px 0px 0px 0px;
+    padding: 15px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+  }
+
+  .trendy img {
+      width: 20px; 
+      height: auto; 
+      margin: 0px 5px 0px 0px;
+  }
+
+  .trendy:hover {
+    background-color: #D2E3FC;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 1000px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+    .responsive {
+      width: 100%;
+      margin: 6px 0;
+    }
+    body {
+      margin: 0px 50px 0px 50px;
+    }
+  }
