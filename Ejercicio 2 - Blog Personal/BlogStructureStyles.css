@@ -211,11 +211,31 @@
     margin-top: 20px;
     border-radius: 10px;
   }
-  
-  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 1700px) {
-    .leftcolumn, .rightcolumn {   
-      width: 100%;
-      padding: 0;
+
+/* R E S P O N S I V E */
+
+  /* Tablets: Pantallas entre 1500px y 1000px */
+    @media screen and (max-width: 1500px) and (min-width: 1000px) {
+      .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+      }
     }
-  }
+
+  /* Teléfonos: Pantallas menores a 1000px */
+    @media screen and (max-width: 1000px) {
+
+      .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+      }
+
+      .card {
+        flex: 1 0 300px;
+      }
+
+      body {
+        padding: 5px;
+        margin: 5px;
+      }
+    }

@@ -168,10 +168,14 @@
     background-color: #aaa;
     width: 100%;
     padding: 20px;
-    height: 350px;
+    height: 250px;
     background-size: cover;
     position: center;
     border-radius: 10px;
+  }
+
+  div.card p {
+    margin: 0;
   }
 
   div.gallery {
@@ -206,6 +210,31 @@
   
   div.desc p {
     margin: 5px 0 5px 0;
+  }
+
+  .pagination {
+    float: center;
+    text-align: center;
+    margin: 20px 0 20px 0;
+  }
+  
+  .pagination a {
+    color: black;
+    float: center;
+    padding: 10px 16px;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    background-color: #D2E3FC;
+    color: #174EA6;
+    font-weight: bold;
+    border-radius: 100%;
+  }
+  
+  .pagination a:hover:not(.active) {
+    background-color: #D2E3FC;
+    border-radius: 100%;
   }
   
   * {
@@ -255,17 +284,46 @@
     border-radius: 10px;
   }
   
-  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 1000px) {
+/* R E S P O N S I V E */
+
+  /* Tablets: Pantallas entre 1500px y 1000px */
+  @media screen and (max-width: 1500px) and (min-width: 1000px) {
+
     .leftcolumn, .rightcolumn {   
       width: 100%;
       padding: 0;
     }
-    .responsive {
-      width: 100%;
-      margin: 6px 0;
+
+    .tiles-container {
+      gap: 21.5px;
     }
+  }
+
+/* Teléfonos: Pantallas menores a 1000px */
+  @media screen and (max-width: 1000px) {
+
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+
+    .tiles-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      flex: 1 0 100%;
+    }
+
+    .responsive {
+      float: center;
+      width: 100%;
+    }
+
     body {
-      margin: 0px 50px 0px 50px;
+      padding: 5px;
+      margin: 5px;
     }
   }
