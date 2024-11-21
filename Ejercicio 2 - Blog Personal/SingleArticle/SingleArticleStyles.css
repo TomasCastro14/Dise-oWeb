@@ -1,35 +1,35 @@
 /* F U E N T E S */
-    @font-face {
-      font-family: BirdsOfParadise;
-      src: url(../HomePageElements/Fonts/BirdsOfParadise.ttf);
-    }
+  @font-face {
+    font-family: BirdsOfParadise;
+    src: url(../HomePageElements/Fonts/BirdsOfParadise.ttf);
+  }
 
-    @font-face {
-      font-family: LexendDeca_Bold;
-      src: url(../HomePageElements/Fonts/LexendDeca/LexendDeca-Bold.ttf);
-    }
+  @font-face {
+    font-family: LexendDeca_Bold;
+    src: url(../HomePageElements/Fonts/LexendDeca/LexendDeca-Bold.ttf);
+  }
 
-    @font-face {
-      font-family: LexendDeca_Medium;
-      src: url(../HomePageElements/Fonts/LexendDeca/LexendDeca-Medium.ttf);
-    }
+  @font-face {
+    font-family: LexendDeca_Medium;
+    src: url(../HomePageElements/Fonts/LexendDeca/LexendDeca-Medium.ttf);
+  }
 
-    @font-face {
-      font-family: LexendDeca_Regular;
-      src: url(../HomePageElements/Fonts/LexendDeca/LexendDeca-Regular.ttf);
-    }
+  @font-face {
+    font-family: LexendDeca_Regular;
+    src: url(../HomePageElements/Fonts/LexendDeca/LexendDeca-Regular.ttf);
+  }
 
 
-    @font-face {
-      font-family: LexendDeca_Light;
-      src: url(../HomePageElements/Fonts/LexendDeca/LexendDeca-Light.ttf);
-    }
+  @font-face {
+    font-family: LexendDeca_Light;
+    src: url(../HomePageElements/Fonts/LexendDeca/LexendDeca-Light.ttf);
+  }
 
 /* E S T I L O S - D E L - T E X T O */
     h1{
         color: #174EA6;
         font-family: LexendDeca_Bold;
-        margin-bottom: 20px;
+        margin: 0;
     }
 
     h2{
@@ -49,6 +49,7 @@
       color: #202124;
       font-family: LexendDeca_Light;
       text-align: auto;
+      margin: 0;
   }
 
     p {
@@ -93,7 +94,7 @@
     border-radius: 20px;
     transition: background-color 0.3s ease;
   }
-  
+
   .topnav a.active {
     background-color: #D2E3FC;
     color: #174EA6;
@@ -125,34 +126,12 @@
   }
   
   /* Create two unequal columns that floats next to each other */
-  /* Left column */
-  .leftcolumn {   
-    float: left;
-    width: 75%;
-    padding: 0px 20pxpx 0px 0px;
-  }
-  
-  /* Right column */
-  .rightcolumn {
-    float: left;
-    width: 25%;
-    padding-left: 20px;
-  }
-  
-  /* Fake image */
-  .fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
-    height: 100px;
-    background-size: cover;
-    position: center;
-  }
-  
+
   .tiles-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 20px;
+    margin: 0px 300px 20px 300px;
   }
 
   /* Add a card effect for articles */
@@ -160,7 +139,7 @@
     flex: 1 0 500px;
     background-color: white;
     padding: 20px;
-    margin-bottom: 20px;
+    margin: 0px 300px 20px 300px;
     border-radius: 10px;
   }
 
@@ -178,14 +157,40 @@
     background-color: #aaa;
     width: 100%;
     padding: 20px;
-    height: 250px;
+    height: 300px;
     background-size: cover;
     position: center;
     border-radius: 10px;
   }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
-  div.card p {
-    margin: 0;
+  .trendy {
+    align-items: center;
+    display: flex;
+    background-color: #EDF1F2;
+    align-items: center;
+    color: #202124;
+    margin: 10px 0px 0px 0px;
+    padding: 15px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+  }
+
+  .trendy img {
+      width: 20px; 
+      height: auto; 
+      margin: 0px 5px 0px 0px;
+  }
+
+  .responsive {
+    float: center;
+    width: 31.77%;
   }
 
   div.gallery {
@@ -222,64 +227,6 @@
     margin: 5px 0 5px 0;
   }
 
-  .pagination {
-    float: center;
-    text-align: center;
-    margin: 20px 0 20px 0;
-  }
-  
-  .pagination a {
-    color: black;
-    float: center;
-    padding: 10px 16px;
-    text-decoration: none;
-  }
-  
-  .pagination a.active {
-    background-color: #D2E3FC;
-    color: #174EA6;
-    font-weight: bold;
-    border-radius: 100%;
-  }
-  
-  .pagination a:hover:not(.active) {
-    background-color: #D2E3FC;
-    border-radius: 100%;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  .responsive {
-    float: center;
-    width: 31.77%;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  .trendy {
-    align-items: center;
-    display: flex;
-    background-color: #EDF1F2;
-    align-items: center;
-    color: #202124;
-    margin: 10px 0px 0px 0px;
-    padding: 15px;
-    border-radius: 15px;
-    transition: background-color 0.3s ease;
-  }
-
-  .trendy img {
-      width: 20px; 
-      height: auto; 
-      margin: 0px 5px 0px 0px;
-  }
 
   .trendy:hover {
     background-color: #D2E3FC;
@@ -293,47 +240,31 @@
     margin-top: 20px;
     border-radius: 10px;
   }
-  
+
 /* R E S P O N S I V E */
 
   /* Tablets: Pantallas entre 1500px y 1000px */
-  @media screen and (max-width: 1500px) and (min-width: 1000px) {
-
-    .leftcolumn, .rightcolumn {   
-      width: 100%;
-      padding: 0;
+    @media screen and (max-width: 1500px) and (min-width: 1000px) {
+      .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+      }
     }
 
-    .tiles-container {
-      gap: 21.5px;
-    }
-  }
+  /* Teléfonos: Pantallas menores a 1000px */
+    @media screen and (max-width: 1000px) {
 
-/* Teléfonos: Pantallas menores a 1000px */
-  @media screen and (max-width: 1000px) {
+      .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+      }
 
-    .leftcolumn, .rightcolumn {   
-      width: 100%;
-      padding: 0;
-    }
+      .card {
+        flex: 1 0 300px;
+      }
 
-    .tiles-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
+      body {
+        padding: 5px;
+        margin: 5px;
+      }
     }
-
-    .card {
-      flex: 1 0 100%;
-    }
-
-    .responsive {
-      float: center;
-      width: 100%;
-    }
-
-    body {
-      padding: 5px;
-      margin: 5px;
-    }
-  }

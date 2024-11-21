@@ -1,0 +1,379 @@
+/* F U E N T E S */
+@font-face {
+    font-family: BirdsOfParadise;
+    src: url(../HomePageElements/Fonts/BirdsOfParadise.ttf);
+  }
+
+  @font-face {
+    font-family: LexendDeca_Bold;
+    src: url(../HomePageElements/Fonts/LexendDeca/LexendDeca-Bold.ttf);
+  }
+
+  @font-face {
+    font-family: LexendDeca_Medium;
+    src: url(../HomePageElements/Fonts/LexendDeca/LexendDeca-Medium.ttf);
+  }
+
+  @font-face {
+    font-family: LexendDeca_Regular;
+    src: url(../HomePageElements/Fonts/LexendDeca/LexendDeca-Regular.ttf);
+  }
+
+
+  @font-face {
+    font-family: LexendDeca_Light;
+    src: url(../HomePageElements/Fonts/LexendDeca/LexendDeca-Light.ttf);
+  }
+
+/* E S T I L O S - D E L - T E X T O */
+  h1{
+      color: #174EA6;
+      font-family: LexendDeca_Bold;
+      margin-bottom: 20px;
+  }
+
+  h2{
+      color: #2173BB;
+      font-family: LexendDeca_Medium;
+      text-align: auto;
+  }
+
+  h3{
+      color: #174EA6;
+      font-family: LexendDeca_Regular;
+      text-align: auto;
+      margin: 5px;
+  }
+
+  h5{
+    color: #202124;
+    font-family: LexendDeca_Light;
+    text-align: auto;
+}
+
+  p {
+      color: #202124;
+      font-family: LexendDeca_Light;
+  }
+
+/* C O N S T R U C T O R E S */
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: LexendDeca_Regular;
+  padding: 20px;
+  background: #EDF1F2;
+  margin: 0px 200px 0px 200px;
+}
+
+.header {
+  background-color: #EDF1F2;
+  padding: 30px;
+  text-align: center;
+}
+
+.topnav {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  background-color: #EDF1F2;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 7px 20px;
+  margin: 10px 0px 10px 0px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.topnav a.active {
+  background-color: #D2E3FC;
+  color: #174EA6;
+  font-weight: bold;
+}
+
+.topnav a:hover {
+  background-color: #D2E3FC;
+}
+
+/* Create a right-aligned (split) link inside the navigation bar */
+.topnav a.split {
+    float: right;
+    align-items: center;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    color: #174EA6;
+}
+
+.topnav a.split img {
+    width: 20px; 
+    height: auto; 
+    margin: 0px 5px 0px 0px;
+}
+
+.topnav a.split:hover {
+  background-color: #D2E3FC;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  padding: 0px 20pxpx 0px 0px;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  height: 100px;
+  background-size: cover;
+  position: center;
+}
+
+.tiles-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+/* Add a card effect for articles */
+.card {
+  flex: 1 0 500px;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.card-img-title {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  height: 500px;
+  background-size: cover;
+  position: center;
+  border-radius: 10px;
+}
+
+.card-img {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  height: 250px;
+  background-size: cover;
+  position: center;
+  border-radius: 10px;
+}
+
+div.card p {
+  margin: 0;
+}
+
+div.gallery {
+  background-color: white;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+div.gallery:hover {
+  background-color: #D2E3FC;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+div.desc {
+  padding: 0 15px 10px 15px;
+  text-align: left;
+}
+
+div.desc h3 {
+  margin: 5px 0 5px 0;
+}
+
+div.desc h5 {
+  margin: 7px 0 7px 0;
+}
+
+div.desc p {
+  margin: 5px 0 5px 0;
+}
+
+.danger {
+  background-color: #FAD2CF;
+  border-left: 6px solid #EA4335;
+  padding: 2px 10px 2px 15px;
+  border-radius: 10px;
+  margin: 20px 0px 20px 0px;
+}
+
+.alert {
+  background-color: #FEEFC3;
+  border-left: 6px solid #FBBC04;
+  padding: 2px 10px 2px 15px;
+  border-radius: 10px;
+  margin: 20px 0px 20px 0px;
+}
+
+table {
+  border-collapse: collapse;
+  border-radius: 10px;
+  width: 100%;
+}
+
+#danger {
+  background-color: #FAD2CF;
+}
+
+#alert{
+  background-color: #FEEFC3;
+}
+
+td, th {
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  padding: 20px;
+}
+
+tr:nth-child(even) {
+  background-color: #EDF1F2;
+}
+
+.pagination {
+  float: center;
+  text-align: center;
+  margin: 20px 0 20px 0;
+}
+
+.pagination a {
+  color: black;
+  float: center;
+  padding: 10px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #D2E3FC;
+  color: #174EA6;
+  font-weight: bold;
+  border-radius: 100%;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #D2E3FC;
+  border-radius: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  float: center;
+  width: 31.77%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.trendy {
+  align-items: center;
+  display: flex;
+  background-color: #EDF1F2;
+  align-items: center;
+  color: #202124;
+  margin: 10px 0px 0px 0px;
+  padding: 15px;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.trendy img {
+    width: 20px; 
+    height: auto; 
+    margin: 0px 5px 0px 0px;
+}
+
+.trendy:hover {
+  background-color: #D2E3FC;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* R E S P O N S I V E */
+
+/* Tablets: Pantallas entre 1500px y 1000px */
+@media screen and (max-width: 1500px) and (min-width: 1000px) {
+
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+
+  .tiles-container {
+    gap: 21.5px;
+  }
+}
+
+/* Teléfonos: Pantallas menores a 1000px */
+@media screen and (max-width: 1000px) {
+
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+
+  .tiles-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .card {
+    flex: 1 0 100%;
+  }
+
+  .responsive {
+    float: center;
+    width: 100%;
+  }
+
+  body {
+    padding: 5px;
+    margin: 5px;
+  }
+}
