@@ -157,10 +157,11 @@
     background-color: #aaa;
     width: 100%;
     padding: 20px;
-    height: 300px;
+    height: 350px;
     background-size: cover;
     position: center;
     border-radius: 10px;
+    background-position: center;
   }
   
   /* Clear floats after the columns */
@@ -245,22 +246,40 @@
 
   /* Tablets: Pantallas entre 1500px y 1000px */
     @media screen and (max-width: 1500px) and (min-width: 1000px) {
-      .leftcolumn, .rightcolumn {   
-        width: 100%;
-        padding: 0;
+      .card {
+        margin: 0px 0px 20px 0px;
       }
+
+      .tiles-container {
+        gap: 21.5px;
+      }
+
     }
 
   /* Teléfonos: Pantallas menores a 1000px */
     @media screen and (max-width: 1000px) {
 
-      .leftcolumn, .rightcolumn {   
-        width: 100%;
-        padding: 0;
+      .card {
+        margin: 0px 0px 20px 0px;
+      }
+      
+      .card-img-title {
+        height: 350px;
       }
 
-      .card {
-        flex: 1 0 300px;
+      .card-img {
+        height: 250px;
+      }
+
+      .tiles-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      } 
+
+      .responsive {
+        float: center;
+        width: 100%;
       }
 
       body {
